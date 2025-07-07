@@ -1,7 +1,5 @@
 // This is a comment and i'll begin with a small calculator?
-/* This starts a multi line comment and I'll explain what Wyzer is, Wyzer is a C/C++ replacement for me , im too tired of Header files and i want something as easy as python to learn and code with because
-  Rust and Zig are weird in terms of Syntax , Rust has a learning curve and Zig has bitcast stuff and uses @ which is kinda weird to me so im wanting to make a replacement to C/C++ and try to make it flawless
-  If you want to contribute , Feel totally free , its appreciated ✨ my goals are to make a Memory safe Programming language without GC and with the plan of Simplicity */
+/* This starts a multi line comment and I'll explain why im making this lang , its because of the endless debian logo ahh learning curve of rust */
 
 /* Primitive types 
   int, bool , float , char
