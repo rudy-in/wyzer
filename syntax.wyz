@@ -27,3 +27,18 @@ pub def logic() {
       std.println("false");
     }
 }
+
+// now if you want to make a function inside of a function you can do that by using `sub` and if you want to make a sub function inside of a sub function you can use `sub sub` and you can keep repeating this and keep making functions inside of functions inside of functions inside of functions
+
+pub def function() {
+  std.println("does something");
+  sub def function1() {
+    std.println("does something something");
+    sub sub def function2() {
+        std.println("does something too");
+        sub sub sub def function3() {
+            std.println("does something else");
+          }
+        }
+      }
+}
