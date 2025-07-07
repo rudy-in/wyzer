@@ -56,3 +56,14 @@ pub def function() {
         }
       }
 }
+// Creating a struct
+struct Point {
+    x: int;
+    y: int;
+}
+
+// Calling it
+def func() {
+    let p = Point(10,20);
+    std.println(p.x, p.y);
+}
