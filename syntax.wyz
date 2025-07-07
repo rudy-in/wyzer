@@ -14,6 +14,8 @@ def main() {
 }
 
 
+// functions are private by default , to make them public you can use the `pub` keyword , this is useful when you want to use a function in another file to call it , private functions cannot be called and you cant use main for everything however if you want to then you can by making it public but the best practice is to have another function
+
 pub def logic() {
     let x = 8;
     var y: u32 = -8;
