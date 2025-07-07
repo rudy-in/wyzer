@@ -83,3 +83,8 @@ enum Color {
   Green,
   Blue
 }
+
+def something() {
+    let c = Color.Green;
+    std.println(c);
+}
