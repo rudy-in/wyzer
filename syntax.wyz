@@ -3,6 +3,10 @@
   Rust and Zig are weird in terms of Syntax , Rust has a learning curve and Zig has bitcast stuff and uses @ which is kinda weird to me so im wanting to make a replacement to C/C++ and try to make it flawless
   If you want to contribute , Feel totally free , its appreciated ✨ my goals are to make a Memory safe Programming language without GC and with the plan of Simplicity */
 
+/* Primitive types 
+  int, bool , float , char
+  types - i8, i16, i32, i64 , i128, u8, u16, u32, u64, u128 */
+
 use std.*;
 
 
@@ -11,5 +15,7 @@ var: u32 = -8;
 
 
 def main() {
-  std.println("Hello world")
+  std.println("Hello world") // you dont need a semi colon when there is nothing in the next line except for a bracket and whitespaces
 }
+
+
