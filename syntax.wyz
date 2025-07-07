@@ -9,13 +9,18 @@
 
 use std.*;
 
-
-let x = 8;
-var: u32 = -8;
-
-
 def main() {
+  let x = 8;
+  var y: u32 = -8;
   std.println("Hello world") // you dont need a semi colon when there is nothing in the next line except for a bracket and whitespaces
+
+  if x == y {
+    std.println("true");
+  } else if x >= y {
+      std.println("idk man");
+    } else {
+      std.println("false");
+    }
 }
 
 
