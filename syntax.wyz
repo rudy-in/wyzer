@@ -6,8 +6,23 @@
 /* Primitive types 
   int, bool , float , char
   types - i8, i16, i32, i64 , i128, u8, u16, u32, u64, u128 */
-
+// importing the modules or dependencies
 use std.*;
+/// you just cant spam it like
+use std.io;
+use std.print;
+use std.println;
+
+// there are 2 ways to import your dependencies in a clean way
+// first one is to import it like std.*; where you import everything from std and you can just use anything you want , if you want to import something in specific then you can do it in this way
+
+use std.(
+  io,
+  print,
+  println
+)
+
+
 
 def main() {
   std.println("Hello world") // you dont need a semi colon when there is nothing in the next line except for a bracket and whitespaces
