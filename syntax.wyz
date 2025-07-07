@@ -15,9 +15,9 @@ use std.println;
 
 // there are 2 ways to import your dependencies in a clean way
 // first one is to import it like std.*; where you import everything from std and you can just use anything you want , if you want to import something in specific then you can do it in this way
-
+// to call something from a dependency like io you can just go with 
 use std.(
-  io,
+  io.{read,open},
   print,
   println
 )
