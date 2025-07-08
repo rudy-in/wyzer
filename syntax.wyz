@@ -26,6 +26,13 @@ def main() {
   std.println("Hello world") // you dont need a semi colon when there is nothing in the next line except for a bracket and whitespaces
 }
 
+// to measure the length of the spaces in a string or letters in a string you can use the len() function
+
+def main() {
+  let x = "   ";
+  let x = x.len();
+}
+
 
 // functions are private by default , to make them public you can use the `pub` keyword , this is useful when you want to use a function in another file to call it , private functions cannot be called and you cant use main for everything however if you want to then you can by making it public but the best practice is to have another function
 
