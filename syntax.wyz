@@ -126,3 +126,55 @@ std.println(y)
 
 // the code above will output 1 from the array
 
+// while loop
+let i = 0;
+
+while i < 5 {
+  std.println(i);
+  let i = i + 1;
+}
+
+// for loops
+for let i in 0..5 {
+  std.println(i);
+}
+// this would print 0 -> 4
+for let i in 0..=5 {
+  std.println(i);
+}
+// this would print 0 -> 5
+
+// `for` over collections , if you want to iterate strings or arrays
+
+let arr = [1,2,3];
+
+for let item in arr {
+  std.println(item);
+}
+// or with indices
+for let (i, item) in arr.enumerate() {
+  std.println(i, item);
+}
+
+
+// infinite loops
+
+loop {
+  std.println("hello world);
+}
+
+/* loop control keywords
+    continue , break , return */
+
+for let i in 0..10 {
+  if i == 5 {
+    break;
+  }
+
+  if i % 2 == 0 {
+    continue;
+  }
+
+  std.println(i);
+}
+
