@@ -102,22 +102,34 @@ def something() {
 }
 
 // unions
+// i cant decide it , one is 
 union Value {
   int i
   float f
   string s
 }
 
-let v = Value.i(42);      // sets the `i` field
-let v = Value.f(3.14);    // sets the `f` field
-let v = Value.s("hello"); // sets the `s` field
-
-// the safe way to access these values is to either use if statements or match like this
+let v = Value.i(42);
 
 match v {
-  i => print("int", v.i),
-  f => print("float", v.f),
-  s => print("string", v.s)
+  i => print(v.i),
+  f => print(v.f),
+  s => print(v.s)
+}
+// and the other is 
+
+union Value {
+  i: i64
+  f: f64
+  s: str
+}
+
+let v = Value.i(42);
+
+match v {
+  i => print(v.i),
+  f => print(v.f),
+  s => print(v.s)
 }
 
 
