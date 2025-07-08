@@ -35,7 +35,7 @@ def main() {
 
 def main() {
   let x = "   ";
-  let x = x.len();
+  let x = x.len()
 }
 
 
@@ -100,3 +100,35 @@ def something() {
     let c = Color.Green;
     std.println(c);
 }
+
+// unions
+union Value {
+  int i
+  float f
+  string s
+}
+
+let v = Value.i(42);      // sets the `i` field
+let v = Value.f(3.14);    // sets the `f` field
+let v = Value.s("hello"); // sets the `s` field
+
+// the safe way to access these values is to either use if statements or match like this
+
+match v {
+  i => print("int", v.i),
+  f => print("float", v.f),
+  s => print("string", v.s)
+}
+
+
+// arrays
+
+let x = [1,2,3,4,5];
+
+// to call this array you always start from 0 so 1 in the array is placed at 0 , 2 is placed at 1
+
+let y = x.0;
+std.println(y)
+
+// the code above will output 1 from the array
+
