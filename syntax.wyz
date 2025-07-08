@@ -102,34 +102,16 @@ def something() {
 }
 
 // unions
-// i cant decide it , one is 
 union Value {
-  int i
-  float f
-  string s
+  i(int),
+  f(float),
+  s(str)
 }
-
-let v = Value.i(42);
-
+/// NOTE: match making is enforced
 match v {
-  i => print(v.i),
-  f => print(v.f),
-  s => print(v.s)
-}
-// and the other is 
-
-union Value {
-  i: i64
-  f: f64
-  s: str
-}
-
-let v = Value.i(42);
-
-match v {
-  i => print(v.i),
-  f => print(v.f),
-  s => print(v.s)
+  i(x) => std.print(x),
+  f(x) => std.print(x),
+  s(x) => std.print(x)
 }
 
 
